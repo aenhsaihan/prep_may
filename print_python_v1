@@ -58,10 +58,10 @@ a_list = [matrix_p,matrix_y,matrix_t,matrix_h,matrix_o,matrix_n]
 
 
 
-def join(a_list):
-    for i in range(0,len(a_list)):
-        for j in range(0,len(a_list[i])):
-            word_matrix[i] += (a_list[i][j])
+def join(letters):
+    for j in range(len(a_list[i])):
+        for i in range(len(letters)):
+            word_matrix[i] += (letters[i][j])
     for line in word_matrix:
         print "".join(line)
     
