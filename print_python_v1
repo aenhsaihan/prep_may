@@ -1,3 +1,4 @@
+
 matrix_p = [
     ["XXXXX"],
     ["X   X"],
@@ -45,25 +46,18 @@ matrix_n = [
     ["X  XX"],
     ["X   X"]
     ]
- 
-word_matrix = [
-    [],
-    [],
-    [],
-    [],
-    []
-    ]
     
 a_list = [matrix_p,matrix_y,matrix_t,matrix_h,matrix_o,matrix_n]
 
-
-
-def join(a_list):
-    for i in range(0,len(a_list)):
-        for j in range(0,len(a_list[i])):
-            word_matrix[i] += (a_list[i][j])
-    for line in word_matrix:
-        print "".join(line)
+def join(letters):
+    one_line = ""
+    i = 0
+    for j in range(5):
+        for i in range(6):
+            #print letters[i][j]
+            one_line += str(letters[i][j])
+        print one_line
+        one_line = ""    
     
-    
+
 join(a_list)
