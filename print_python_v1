@@ -1,0 +1,69 @@
+matrix_p = [
+    ["XXXXX"],
+    ["X   X"],
+    ["XXXXX"],
+    ["X    "],
+    ["X    "]
+    ]
+    
+matrix_y = [
+    ["Y   X"],
+    ["Y   X"],
+    ["XXXXX"],
+    ["    X"],
+    ["XXXXX"]
+    ]
+    
+matrix_t = [
+    ["XXXXX"],
+    ["  X  "],
+    ["  X  "],
+    ["  X  "],
+    ["  X  "]
+    ]
+    
+matrix_h = [
+    ["X   X"],
+    ["X   X"],
+    ["XXXXX"],
+    ["X   X"],
+    ["X   X"]
+    ]
+    
+matrix_o = [
+    ["XXXXX"],
+    ["X   X"],
+    ["X   X"],
+    ["X   X"],
+    ["XXXXX"]
+    ]
+    
+matrix_n = [
+    ["X   X"],
+    ["XX  X"],
+    ["X X X"],
+    ["X  XX"],
+    ["X   X"]
+    ]
+ 
+word_matrix = [
+    [],
+    [],
+    [],
+    [],
+    []
+    ]
+    
+a_list = [matrix_p,matrix_y,matrix_t,matrix_h,matrix_o,matrix_n]
+
+
+
+def join(a_list):
+    for i in range(0,len(a_list)):
+        for j in range(0,len(a_list[i])):
+            word_matrix[i] += (a_list[i][j])
+    for line in word_matrix:
+        print "".join(line)
+    
+    
+join(a_list)
